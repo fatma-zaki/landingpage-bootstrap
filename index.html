@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lara & Malek</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- AOS Library CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Glozzom</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Design</a></li>
+                <li><a class="dropdown-item" href="#">Development</a></li>
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slide1.avif" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block carousel-img">
+            <h1>Turning Gears, Sending Data, Making Money</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+              class="btn btn-primary"
+              >Sign Up Now</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/slide2.avif"
+            class="d-block w-100 carousel-img"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Innovate Your Workflow</h1>
+            <p>Transform your business with Glozzom.</p>
+            <a
+              href="#"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/slid3.jpg"
+            class="d-block w-100 carousel-img"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Innovate Your Workflow</h1>
+            <p>Transform your business with Glozzom.</p>
+            <a
+              href="#"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  <!-- Exclusive Service -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="exclusive-services row justify-content-center align-items-center text-center text-md-start p-5 gap-5">
+          <div class="col-md-5" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Exclusive Service</h2>
+            <p>
+              We offer our clients the most up to date services. We have partnered
+              with the leading service provider to connect you and your business to
+              5G — the future of connectivity is here.
+            </p>
+            <button class="btn btn-danger">Learn More</button>
+          </div>
+          <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
+            <img src="img/laptob.png" alt="Laptop Image" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+   
+  
+    <!-- Video Preview Section -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <h2>Welcome To Traversy Media</h2>
+        <p class="lead">
+          Click the play button to meet Bob and see what we do!
+        </p>
+
+        <!-- Thumbnail and play icon -->
+        <a
+          href="#"
+          data-bs-toggle="modal"
+          data-bs-target="#videoModal"
+          class="position-relative d-inline-block"
+          style="width: 560px"
+        >
+          <img
+            src="https://img.youtube.com/vi/SBmSRK3feww/maxresdefault.jpg"
+            class="img-fluid rounded shadow"
+            alt="Video Thumbnail"
+          />
+          <i
+            class="fas fa-play-circle"
+            style="
+              font-size: 4rem;
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            "
+          ></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="see section-padding text-center bg-white">
+      <div class="container">
+        <h2 data-aos="fade-up" data-aos-duration="1000">See What We Do</h2>
+        <p class="lead" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          We build websites, apps, and more!
+        </p>
+        <div class="row text-center mt-5">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+            <i class="fas fa-pencil-ruler services-icons"></i>
+            <h4>Design</h4>
+            <p>
+              Creative and responsive design tailored to your brand identity.
+            </p>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000">
+            <i class="fas fa-code services-icons"></i>
+            <h4>Development</h4>
+            <p>High-quality web development using modern technologies.</p>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000">
+            <i class="fas fa-bullhorn services-icons"></i>
+            <h4>Marketing</h4>
+            <p>Reach a broader audience with our data-driven strategies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Testimonials Section (with Carousel) -->
+    <section class="bg-light section-padding text-center" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <h2 data-aos="fade-down" data-aos-duration="1000">Testimonials</h2>
+    
+        <div
+          id="testimonialCarousel"
+          class="carousel slide mt-4"
+          data-bs-ride="carousel"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "Glozzom transformed our online presence. Highly recommend!"
+                </p>
+                <footer class="blockquote-footer">Happy Client</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "Excellent service and support throughout our project."
+                </p>
+                <footer class="blockquote-footer">Another Client</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <p class="mb-0">"Highly skilled team and timely delivery!"</p>
+                <footer class="blockquote-footer">Tech Company</footer>
+              </blockquote>
+            </div>
+          </div>
+    
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <div class="faq_blog_corrected_1" unique-script-id="w-w-dm-id">
+      <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+          <p class="text-blk heading">
+            Frequently Asked Questions
+          </p>
+          <p class="text-blk subHeading">
+            Sit amet massa vitae tortor condimentum lacinia quis vel eros. Est ullamcorper
+          </p>
+          <div class="responsive-container-block">
+            <img class="bigImg" src="img/ask.jpg">
+            <div class="responsive-container-block qaa">
+              <div class="container-block">
+                <div class="faq">
+                  <span class="for-flex">
+                    <div class="icon-block icon" id="w-c-s-bgc_p-ifc_p-1-dm-id">
+                      <svg class="faq-svg" height="29.957" viewBox="0 0 39.799 29.957" width="39.799" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42.519,49.865H15.906a1.986,1.986,0,1,1,0-3.972H42.518a1.986,1.986,0,0,1,0,3.972Z" transform="translate(-4.706 -20.436)">
+                        </path>
+                        <path d="M42.519,31.034H15.906a1.986,1.986,0,1,1,0-3.972H42.518a1.986,1.986,0,0,1,0,3.972Z" transform="translate(-4.706 -14.07)">
+                        </path>
+                        <path d="M42.519,12.2H15.906a1.986,1.986,0,1,1,0-3.972H42.518a1.986,1.986,0,0,1,0,3.972Z" transform="translate(-4.706 -7.703)">
+                        </path>
+                        <ellipse cx="2.667" cy="2.667" rx="2.667" ry="2.667" transform="translate(0 0)">
+                        </ellipse>
+                        <ellipse cx="2.667" cy="2.667" rx="2.667" ry="2.667" transform="translate(0 12.311)">
+                        </ellipse>
+                        <ellipse cx="2.667" cy="2.667" rx="2.667" ry="2.667" transform="translate(0 24.623)">
+                        </ellipse>
+                      </svg>
+                    </div>
+                    <p class="text-blk faq-questions">
+                      Lorem ipsum dolor sit amet?
+                    </p>
+                    <div class="toggle-faq-icon openImg icon-block" id="ia3y3">
+                      <svg height="57" viewBox="0 0 57 57" width="57" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0 57) rotate(-90)">
+                          <g transform="translate(0 0)">
+                            <path d="M15.178,0a2.666,2.666,0,0,1,1.6.523,2.219,2.219,0,0,1,.9,1.542,2.137,2.137,0,0,1-.57,1.665L5.882,15.927,16.706,28.143a2.132,2.132,0,0,1,.547,1.675,2.227,2.227,0,0,1-.922,1.533,2.676,2.676,0,0,1-1.911.555,2.574,2.574,0,0,1-1.747-.9L.57,17.361a2.115,2.115,0,0,1,0-2.889L13.1.823A2.627,2.627,0,0,1,15.178,0Z" transform="translate(18.337 12.769)">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="toggle-faq-icon crossImg icon-block">
+                      <svg height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0.219 0.218)">
+                          <g>
+                            <rect height="38" opacity="0" transform="translate(37.782 37.782) rotate(180)" width="38">
+                            </rect>
+                            <path d="M17.764,15.525l6.825-6.809a1.594,1.594,0,1,0-2.254-2.254l-6.809,6.825L8.717,6.463A1.594,1.594,0,0,0,6.464,8.716l6.825,6.809L6.464,22.334a1.594,1.594,0,1,0,2.254,2.254l6.809-6.825,6.809,6.825a1.594,1.594,0,1,0,2.254-2.254Z" transform="translate(3.519 3.52)">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </span>
+                  <div class="answer-box">
+                    <p class="text-blk faq-answer">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <span class="for-flex">
+                    <div class="icon-block icon" id="w-c-s-bgc_p-ifc_p-2-dm-id">
+                      <svg class="faq-svg" height="29.957" viewBox="0 0 42.605 29.957" width="42.605" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0 0)">
+                          <path d="M38.86,76H3.745A3.75,3.75,0,0,0,0,79.745v22.467a3.75,3.75,0,0,0,3.745,3.745H38.86a3.749,3.749,0,0,0,3.745-3.745V79.745A3.748,3.748,0,0,0,38.86,76Zm-.524,2.5L23.95,92.806a3.745,3.745,0,0,1-5.3,0L4.269,78.5ZM2.5,101.7V80.254L13.284,90.985Zm1.774,1.756L15.054,92.745l1.836,1.826a6.241,6.241,0,0,0,8.824,0l1.838-1.828L38.334,103.46ZM40.109,101.7,29.321,90.985,40.109,80.254Z" transform="translate(0 -76)">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="text-blk faq-questions">
+                      Lorem ipsum dolor sit amet?
+                    </p>
+                    <div class="toggle-faq-icon openImg icon-block" id="ia3y3-2">
+                      <svg height="57" viewBox="0 0 57 57" width="57" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0 57) rotate(-90)">
+                          <g transform="translate(0 0)">
+                            <path d="M15.178,0a2.666,2.666,0,0,1,1.6.523,2.219,2.219,0,0,1,.9,1.542,2.137,2.137,0,0,1-.57,1.665L5.882,15.927,16.706,28.143a2.132,2.132,0,0,1,.547,1.675,2.227,2.227,0,0,1-.922,1.533,2.676,2.676,0,0,1-1.911.555,2.574,2.574,0,0,1-1.747-.9L.57,17.361a2.115,2.115,0,0,1,0-2.889L13.1.823A2.627,2.627,0,0,1,15.178,0Z" transform="translate(18.337 12.769)">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="toggle-faq-icon crossImg icon-block">
+                      <svg height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0.219 0.218)">
+                          <g>
+                            <rect height="38" opacity="0" transform="translate(37.782 37.782) rotate(180)" width="38">
+                            </rect>
+                            <path d="M17.764,15.525l6.825-6.809a1.594,1.594,0,1,0-2.254-2.254l-6.809,6.825L8.717,6.463A1.594,1.594,0,0,0,6.464,8.716l6.825,6.809L6.464,22.334a1.594,1.594,0,1,0,2.254,2.254l6.809-6.825,6.809,6.825a1.594,1.594,0,1,0,2.254-2.254Z" transform="translate(3.519 3.52)">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </span>
+                  <div class="answer-box">
+                    <p class="text-blk faq-answer">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <span class="for-flex">
+                    <div class="icon-block icon" id="w-c-s-bgc_p-ifc_p-3-dm-id">
+                      <svg class="faq-svg" height="33.787" viewBox="0 0 33.787 33.787" width="33.787" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0 -0.001)">
+                          <g>
+                            <path d="M12.286,0H3.072A3.075,3.075,0,0,0,0,3.072v9.215a3.075,3.075,0,0,0,3.072,3.072h9.215a3.075,3.075,0,0,0,3.072-3.072V3.072A3.075,3.075,0,0,0,12.286,0Zm1.536,12.286a1.538,1.538,0,0,1-1.536,1.536H3.072a1.538,1.538,0,0,1-1.536-1.536V3.072A1.538,1.538,0,0,1,3.072,1.536h9.215a1.538,1.538,0,0,1,1.536,1.536Z">
+                            </path>
+                            <path d="M268.286,0h-9.215A3.075,3.075,0,0,0,256,3.072v9.215a3.075,3.075,0,0,0,3.072,3.072h9.215a3.075,3.075,0,0,0,3.072-3.072V3.072A3.075,3.075,0,0,0,268.286,0Zm1.536,12.286a1.538,1.538,0,0,1-1.536,1.536h-9.215a1.538,1.538,0,0,1-1.536-1.536V3.072a1.538,1.538,0,0,1,1.536-1.536h9.215a1.538,1.538,0,0,1,1.536,1.536Z" transform="translate(-237.571)">
+                            </path>
+                            <path d="M12.286,256H3.072A3.075,3.075,0,0,0,0,259.072v9.215a3.075,3.075,0,0,0,3.072,3.072h9.215a3.075,3.075,0,0,0,3.072-3.072v-9.215A3.075,3.075,0,0,0,12.286,256Zm1.536,12.286a1.538,1.538,0,0,1-1.536,1.536H3.072a1.538,1.538,0,0,1-1.536-1.536v-9.215a1.538,1.538,0,0,1,1.536-1.536h9.215a1.538,1.538,0,0,1,1.536,1.536Z" transform="translate(0 -237.571)">
+                            </path>
+                            <path d="M316.788,309.558a.768.768,0,0,0-1.086,0l-2.529,2.529-2.529-2.529a.768.768,0,0,0-1.086,1.086l2.529,2.529-2.529,2.529a.768.768,0,1,0,1.086,1.086l2.529-2.529,2.529,2.529a.768.768,0,1,0,1.086-1.086l-2.529-2.529,2.529-2.529A.768.768,0,0,0,316.788,309.558Z" transform="translate(-287.065 -287.064)">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="text-blk faq-questions">
+                      Lorem ipsum dolor sit amet?
+                    </p>
+                    <div class="toggle-faq-icon openImg icon-block" id="ia3y3-3">
+                      <svg height="57" viewBox="0 0 57 57" width="57" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0 57) rotate(-90)">
+                          <g transform="translate(0 0)">
+                            <path d="M15.178,0a2.666,2.666,0,0,1,1.6.523,2.219,2.219,0,0,1,.9,1.542,2.137,2.137,0,0,1-.57,1.665L5.882,15.927,16.706,28.143a2.132,2.132,0,0,1,.547,1.675,2.227,2.227,0,0,1-.922,1.533,2.676,2.676,0,0,1-1.911.555,2.574,2.574,0,0,1-1.747-.9L.57,17.361a2.115,2.115,0,0,1,0-2.889L13.1.823A2.627,2.627,0,0,1,15.178,0Z" transform="translate(18.337 12.769)">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="toggle-faq-icon crossImg icon-block">
+                      <svg height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0.219 0.218)">
+                          <g>
+                            <rect height="38" opacity="0" transform="translate(37.782 37.782) rotate(180)" width="38">
+                            </rect>
+                            <path d="M17.764,15.525l6.825-6.809a1.594,1.594,0,1,0-2.254-2.254l-6.809,6.825L8.717,6.463A1.594,1.594,0,0,0,6.464,8.716l6.825,6.809L6.464,22.334a1.594,1.594,0,1,0,2.254,2.254l6.809-6.825,6.809,6.825a1.594,1.594,0,1,0,2.254-2.254Z" transform="translate(3.519 3.52)">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </span>
+                  <div class="answer-box">
+                    <p class="text-blk faq-answer">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <span class="for-flex">
+                    <div class="icon-block icon" id="w-c-s-bgc_p-ifc_p-4-dm-id">
+                      <svg class="faq-svg" height="33.787" viewBox="0 0 38.441 33.787" width="38.441" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.063,33.252H6.757V31H0V42.262H6.757V40.01H35.063a3.379,3.379,0,1,0,0-6.757ZM4.5,40.01H2.252V33.252H4.5Zm30.558-2.252H6.757V35.5H35.063a1.126,1.126,0,1,1,0,2.252Z" transform="translate(0 -30.999)">
+                        </path>
+                        <path d="M31.685,333.252H3.379a3.379,3.379,0,1,0,0,6.757H31.685v2.252h6.757V331H31.685Zm-28.306,4.5a1.126,1.126,0,0,1,0-2.252H31.685v2.252Zm30.558-4.5H36.19v6.757H33.937Z" transform="translate(0 -308.475)">
+                        </path>
+                        <path d="M35.063,183.252H22.6V181H15.842v2.252H3.379a3.379,3.379,0,1,0,0,6.757H15.842v2.252H22.6V190.01H35.063a3.379,3.379,0,1,0,0-6.757Zm-31.685,4.5a1.126,1.126,0,1,1,0-2.252H15.842v2.252Zm16.969,2.252H18.095v-6.757h2.252Zm14.716-2.252H22.6V185.5H35.063a1.126,1.126,0,1,1,0,2.252Z" transform="translate(0 -169.737)">
+                        </path>
+                      </svg>
+                    </div>
+                    <p class="text-blk faq-questions">
+                      Lorem ipsum dolor sit amet?
+                    </p>
+                    <div class="toggle-faq-icon openImg icon-block" id="ia3y3-4">
+                      <svg height="57" viewBox="0 0 57 57" width="57" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0 57) rotate(-90)">
+                          <g transform="translate(0 0)">
+                            <path d="M15.178,0a2.666,2.666,0,0,1,1.6.523,2.219,2.219,0,0,1,.9,1.542,2.137,2.137,0,0,1-.57,1.665L5.882,15.927,16.706,28.143a2.132,2.132,0,0,1,.547,1.675,2.227,2.227,0,0,1-.922,1.533,2.676,2.676,0,0,1-1.911.555,2.574,2.574,0,0,1-1.747-.9L.57,17.361a2.115,2.115,0,0,1,0-2.889L13.1.823A2.627,2.627,0,0,1,15.178,0Z" transform="translate(18.337 12.769)">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="toggle-faq-icon crossImg icon-block">
+                      <svg height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0.219 0.218)">
+                          <g>
+                            <rect height="38" opacity="0" transform="translate(37.782 37.782) rotate(180)" width="38">
+                            </rect>
+                            <path d="M17.764,15.525l6.825-6.809a1.594,1.594,0,1,0-2.254-2.254l-6.809,6.825L8.717,6.463A1.594,1.594,0,0,0,6.464,8.716l6.825,6.809L6.464,22.334a1.594,1.594,0,1,0,2.254,2.254l6.809-6.825,6.809,6.825a1.594,1.594,0,1,0,2.254-2.254Z" transform="translate(3.519 3.52)">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </span>
+                  <div class="answer-box">
+                    <p class="text-blk faq-answer">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <form>
+      <div class="container">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+
+        <!-- <button id="liveToastBtn" type="submit" class="btn btn-primary">Submit</button> -->
+        <button type="button" class="btn btn-primary" id="liveToastBtn">
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="..." />
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Hello, world! This is a toast message.</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Glozzom. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Signup Button -->
+
+   
+
+    <!-- Signup Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="signupEmail" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="signupEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="signupPassword"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Create Account
+              </button>
+            </form>
+            <div class="text-center mt-3">
+              Already have an account?
+              <a
+                href="#"
+                data-bs-dismiss="modal"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >Login</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-success w-100">Login</button>
+            </form>
+            <div class="text-center mt-3">
+              Don't have an account?
+              <a
+                href="#"
+                data-bs-dismiss="modal"
+                data-bs-toggle="modal"
+                data-bs-target="#signupModal"
+                >Sign up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for YouTube Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe
+                id="videoFrame"
+                src="https://www.youtube.com/embed/4sosXZsdy-s?si=fll1lETXkg419zkc"
+                title="YouTube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- https://www.youtube.com/embed/4sosXZsdy-s?si=fll1lETXkg419zkc -->
+    <script>
+      const toastTrigger = document.getElementById("liveToastBtn");
+      const toastLiveExample = document.getElementById("liveToast");
+
+      if (toastTrigger) {
+        const toastBootstrap =
+          bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+        toastTrigger.addEventListener("click", () => {
+          toastBootstrap.show();
+        });
+      }
+
+      const videoModal = document.getElementById("videoModal");
+      const videoFrame = document.getElementById("videoFrame");
+      // const videoURL = "https://www.youtube.com/embed/SBmSRK3feww?autoplay=1";
+
+      // videoModal.addEventListener('show.bs.modal', () => {
+      //   videoFrame.src = videoURL;
+      // });
+
+      videoModal.addEventListener("hidden.bs.modal", () => {
+        videoFrame.src = "";
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+  const faqItems = document.querySelectorAll('[unique-script-id="w-w-dm-id"] .faq');
+  const faqToggleIcons = document.querySelectorAll('[unique-script-id="w-w-dm-id"] .faq .toggle-faq-icon');
+
+  faqItems.forEach(function(faqItem) {
+    faqItem.addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+  });
+
+  faqToggleIcons.forEach(function(icon) {
+    icon.addEventListener('click', function(event) {
+      event.stopPropagation();
+      this.closest('.faq').classList.toggle('active');
+    });
+  });
+});
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Library JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
